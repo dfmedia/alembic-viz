@@ -19,8 +19,8 @@ def get_revisions(config, rev_range=None):
     )
 
 
-def generate_revision_graph(revisions, format):
-    dot = Digraph(format='png')
+def generate_revision_graph(revisions, fmt):
+    dot = Digraph(format=fmt)
     for revision in revisions:
         dot.node(revision.revision)
         if revision.down_revision is None:
