@@ -21,7 +21,7 @@ def cli(config, name, filename, format):
         revisions = get_revisions(alembic_config)
     except CommandError as e:
         sys.exit(e)
-    dot = generate_revision_graph(revisions, format)
+    dot = generate_revision_graph(revisions, format, alembic_config)
     dot.render(filename=filename)
 
 
