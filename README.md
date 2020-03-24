@@ -1,7 +1,7 @@
-####Installation
+#### Installation
 `pip install alembic-viz --user`
 
-####Usage
+#### Usage
 ```bash
 Usage: alembic-viz [OPTIONS]
 
@@ -13,7 +13,7 @@ Options:
   --help                  Show this message and exit.
 ```
   
-####Todo
+#### Todo
 * add revision commit messages to graph
 * handle `depends_on` relationships properly
 * add test cases
